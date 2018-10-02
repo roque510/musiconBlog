@@ -1,8 +1,6 @@
-/* eslint-disable */
+import "./Noticias.css";
 import React from "react";
-// @material-ui/core components
-import withStyles from "@material-ui/core/styles/withStyles";
-import Icon from "@material-ui/core/Icon";
+
 // @material-ui/icons
 import Build from "@material-ui/icons/Build";
 import Subject from "@material-ui/icons/Subject";
@@ -23,23 +21,13 @@ import Muted from "components/Typography/Muted.jsx";
 import InfoArea from "components/InfoArea/InfoArea.jsx";
 import Badge from "components/Badge/Badge.jsx";
 
-import projectsStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/projectsStyle.jsx";
-
-import office2 from "assets/img/examples/office2.jpg";
-import cardBlog3 from "assets/img/examples/card-blog3.jpg";
-import cardProject1 from "assets/img/examples/card-project1.jpg";
 import cardProject2 from "assets/img/examples/card-project2.jpg";
 import cardProject5 from "assets/img/examples/card-project5.jpg";
-import cardProject3 from "assets/img/examples/card-project3.jpg";
-import cardProject4 from "assets/img/examples/card-project4.jpg";
 
-import cardProject6 from "assets/img/examples/card-project6.jpg";
-
-function SectionProjects({ ...props }) {
-  const { classes, ...rest } = props;
+function template() {
+	const classes  = this.props;
   return (
-    <div className="cd-section" {...rest}>
-
+    <div className="container">
       {/* Project 4 START */}
       <div className={`${classes.projects} ${classes.projects4}`}>
         <div className={classes.container}>
@@ -53,10 +41,12 @@ function SectionProjects({ ...props }) {
               }`}
             >
               <h2 className={classes.title}>
-                Noticias
+                Some of Our Awesome Products - 4
               </h2>
               <h5 className={classes.description}>
-                Sea informado con algunas de las noticias mas relevantes de nuestro pais Honduras.
+                This is the paragraph where you can write more details about
+                your projects. Keep you user engaged by providing meaningful
+                information.
               </h5>
               <div className={classes.sectionSpace} />
             </GridItem>
@@ -153,6 +143,6 @@ function SectionProjects({ ...props }) {
       {/* Project 4 END */}
     </div>
   );
-}
+};
 
-export default withStyles(projectsStyle)(SectionProjects);
+export default template;

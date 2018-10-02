@@ -29,22 +29,13 @@ class BlogPostsPage extends React.Component {
     const { classes } = this.props;
     return (
       <div>
-        <Header
-          brand="Material Kit PRO React"
-          links={<HeaderLinks dropdownHoverColor="info" />}
-          fixed
-          color="transparent"
-          changeColorOnScroll={{
-            height: 400,
-            color: "info"
-          }}
-        />
+        
         <Parallax image={require("assets/img/bg10.jpg")} filter="dark" small>
           <div className={classes.container}>
             <GridContainer justify="center">
               <GridItem xs={12} sm={12} md={8} className={classes.textCenter}>
                 <h2 className={classes.title}>
-                  A Place for Entrepreneurs to Share and Discover New Stories
+                  Peliculas
                 </h2>
               </GridItem>
             </GridContainer>
@@ -52,10 +43,10 @@ class BlogPostsPage extends React.Component {
         </Parallax>
         <div className={classes.main}>
           <div className={classes.container}>
-            <SectionPills />
+            {/*<SectionPills /> */}
             <SectionInterested />
           </div>
-          <SectionImage />
+           <SectionImage />
           <SubscribeLine />
         </div>
         <Footer
@@ -65,42 +56,19 @@ class BlogPostsPage extends React.Component {
                 <List className={classes.list}>
                   <ListItem className={classes.inlineBlock}>
                     <a
-                      href="https://www.creative-tim.com/"
+                      href="https://roque510.github.io/AboutMe"
                       className={classes.block}
                     >
-                      Creative Tim
+                      Aroque - AlchemyBits
                     </a>
                   </ListItem>
-                  <ListItem className={classes.inlineBlock}>
-                    <a
-                      href="https://www.creative-tim.com/presentation"
-                      className={classes.block}
-                    >
-                      About us
-                    </a>
-                  </ListItem>
-                  <ListItem className={classes.inlineBlock}>
-                    <a
-                      href="//blog.creative-tim.com/"
-                      className={classes.block}
-                    >
-                      Blog
-                    </a>
-                  </ListItem>
-                  <ListItem className={classes.inlineBlock}>
-                    <a
-                      href="https://www.creative-tim.com/license"
-                      className={classes.block}
-                    >
-                      Licenses
-                    </a>
-                  </ListItem>
+                 
                 </List>
               </div>
               <div className={classes.right}>
                 &copy; {1900 + new Date().getYear()} , made with{" "}
                 <Favorite className={classes.icon} /> by{" "}
-                <a href="https://www.creative-tim.com">Creative Tim</a> for a
+                <a href="https://roque510.github.io/AboutMe">Armando Roque</a> for a
                 better web.
               </div>
             </div>

@@ -23,9 +23,7 @@ function SectionInterested({ ...props }) {
   const { classes } = props;
   return (
     <div className={classes.section}>
-      <h3 className={classes.title + " " + classes.textCenter}>
-        You may also be interested in
-      </h3>
+      
       <br />
       <GridContainer>
         <GridItem xs={12} sm={4} md={4} lg={4} xl={4}>

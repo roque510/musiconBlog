@@ -13,13 +13,22 @@ import ProductPage from "views/ProductPage/ProductPage.jsx";
 import SectionsPage from "views/SectionsPage/SectionsPage.jsx";
 import ShoppingCartPage from "views/ShoppingCartPage/ShoppingCartPage.jsx";
 import SignupPage from "views/SignupPage/SignupPage.jsx";
+/* */
+
+import mainPage from "views/App/mainPage/mainPage";
+
+/* MAIN ROUTES*/
 
 var indexRoutes = [
+  { path: "/", name: "PresentationPage", component: PresentationPage }
+];
+
+var indexRoutess = [
   { path: "/about-us", name: "AboutUsPage", component: AboutUsPage },
   { path: "/blog-post", name: "BlogPostPage", component: BlogPostPage },
-  { path: "/blog-posts", name: "BlogPostsPage", component: BlogPostsPage },
+  { path: "/Peliculas", name: "BlogPostsPage", component: BlogPostsPage },
   { path: "/components", name: "Components", component: ComponentsPage },
-  { path: "/contact-us", name: "ContactUsPage", component: ContactUsPage },
+  { path: "/contactanos", name: "ContactUsPage", component: ContactUsPage },
   { path: "/ecommerce-page", name: "EcommercePage", component: EcommercePage },
   { path: "/landing-page", name: "LandingPage", component: LandingPage },
   { path: "/login-page", name: "LoginPage", component: LoginPage },

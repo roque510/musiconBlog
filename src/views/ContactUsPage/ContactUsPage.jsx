@@ -33,7 +33,7 @@ const CustomSkinMap = withScriptjs(
   withGoogleMap(props => (
     <GoogleMap
       defaultZoom={14}
-      defaultCenter={{ lat: 44.43353, lng: 26.093928 }}
+      defaultCenter={{ lat: 15.505247, lng: -88.024239 }}
       defaultOptions={{
         scrollwheel: false,
         zoomControl: true,
@@ -99,7 +99,7 @@ const CustomSkinMap = withScriptjs(
         ]
       }}
     >
-      <Marker position={{ lat: 44.43353, lng: 26.093928 }} />
+      <Marker position={{ lat: 15.505247, lng: -88.024239 }} />
     </GoogleMap>
   ))
 );
@@ -113,15 +113,10 @@ class ContactUsPage extends React.Component {
     const { classes } = this.props;
     return (
       <div>
-        <Header
-          brand="Material Kit PRO React"
-          links={<HeaderLinks dropdownHoverColor="dark" />}
-          fixed
-          color="dark"
-        />
+        
         <div className={classes.bigMap}>
           <CustomSkinMap
-            googleMapURL="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"
+            googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4CRTe54XqAv0FlYXpD5Vi5JGAEvJWavU"
             loadingElement={<div style={{ height: `100%` }} />}
             containerElement={
               <div
@@ -138,39 +133,38 @@ class ContactUsPage extends React.Component {
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.contactContent}>
             <div className={classes.container}>
-              <h2 className={classes.title}>Send us a message</h2>
+              <h2 className={classes.title}>Envianos un mensaje!</h2>
               <GridContainer>
                 <GridItem md={6} sm={6}>
                   <p>
-                    You can contact us with anything related to our Products.
-                    We'll get in touch with you as soon as possible.
+                    Enterate al instante cuando tengamos PELICULAS nuevas o NOTICIAS relevantes del momento.
                     <br />
                     <br />
                   </p>
                   <form>
                     <CustomInput
-                      labelText="Your Name"
+                      labelText="Tu Nombre"
                       id="float"
                       formControlProps={{
                         fullWidth: true
                       }}
                     />
                     <CustomInput
-                      labelText="Email address"
+                      labelText="Correo Electronico"
                       id="float"
                       formControlProps={{
                         fullWidth: true
                       }}
                     />
                     <CustomInput
-                      labelText="Phone"
+                      labelText="Telefono"
                       id="float"
                       formControlProps={{
                         fullWidth: true
                       }}
                     />
                     <CustomInput
-                      labelText="Your message"
+                      labelText="Tu Mensaje"
                       id="float"
                       formControlProps={{
                         fullWidth: true
@@ -182,7 +176,7 @@ class ContactUsPage extends React.Component {
                     />
                     <div className={classes.textCenter}>
                       <Button color="primary" round>
-                        Contact us
+                        Contactanos
                       </Button>
                     </div>
                   </form>
@@ -190,11 +184,10 @@ class ContactUsPage extends React.Component {
                 <GridItem md={4} sm={4} className={classes.mlAuto}>
                   <InfoArea
                     className={classes.info}
-                    title="Find us at the office"
+                    title="Encuentranos"
                     description={
                       <p>
-                        Bld Mihail Kogalniceanu, nr. 8, <br /> 7652 Bucharest,{" "}
-                        <br /> Romania
+                        Facebook!
                       </p>
                     }
                     icon={PinDrop}
@@ -202,10 +195,10 @@ class ContactUsPage extends React.Component {
                   />
                   <InfoArea
                     className={classes.info}
-                    title="Give us a ring"
+                    title="Llamanos"
                     description={
                       <p>
-                        Michael Jordan <br /> +40 762 321 762 <br /> Mon - Fri,
+                        Armando Roque Godoy <br /> +504 9689 5978 <br /> Lunes - Viernes,
                         8:00-22:00
                       </p>
                     }
@@ -214,11 +207,11 @@ class ContactUsPage extends React.Component {
                   />
                   <InfoArea
                     className={classes.info}
-                    title="Legal Information"
+                    title="Informacion Legal"
                     description={
                       <p>
-                        Creative Tim Ltd. <br /> VAT · EN2341241 <br /> IBAN ·
-                        EN8732ENGB2300099123 <br /> Bank · Great Britain Bank
+                        Alchemybits <br /> Honduras <br />·
+                        Derechos Reservados.
                       </p>
                     }
                     icon={BusinessCenter}
@@ -236,42 +229,19 @@ class ContactUsPage extends React.Component {
                 <List className={classes.list}>
                   <ListItem className={classes.inlineBlock}>
                     <a
-                      href="https://www.creative-tim.com/"
+                      href="https://roque510.github.io/AboutMe"
                       className={classes.block}
                     >
-                      Creative Tim
+                      Aroque - AlchemyBits
                     </a>
                   </ListItem>
-                  <ListItem className={classes.inlineBlock}>
-                    <a
-                      href="https://www.creative-tim.com/presentation"
-                      className={classes.block}
-                    >
-                      About us
-                    </a>
-                  </ListItem>
-                  <ListItem className={classes.inlineBlock}>
-                    <a
-                      href="//blog.creative-tim.com/"
-                      className={classes.block}
-                    >
-                      Blog
-                    </a>
-                  </ListItem>
-                  <ListItem className={classes.inlineBlock}>
-                    <a
-                      href="https://www.creative-tim.com/license"
-                      className={classes.block}
-                    >
-                      Licenses
-                    </a>
-                  </ListItem>
+                 
                 </List>
               </div>
               <div className={classes.right}>
                 &copy; {1900 + new Date().getYear()} , made with{" "}
                 <Favorite className={classes.icon} /> by{" "}
-                <a href="https://www.creative-tim.com">Creative Tim</a> for a
+                <a href="https://roque510.github.io/AboutMe">Armando Roque</a> for a
                 better web.
               </div>
             </div>
